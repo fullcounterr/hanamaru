@@ -1,0 +1,480 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#banner-wrapper {
+	width: 100%;
+	margin: 0 auto;
+  	position: relative;
+  	text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#banner-wrapper img {
+	width: 100%;
+}
+#banner-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+  margin-right: 2%;
+  margin-top: 4%;
+}
+#banner-logo img {
+  width: 100%;
+}
+
+.moesubs-brand {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(grey, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(grey, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(grey, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(grey, black); /* Standard syntax */
+}
+
+.moesubs-brand a{
+    color: white;
+}
+
+.moesubs-brand a:hover{
+ 	  text-decoration: none;
+    color: white;
+}
+
+#container-main {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#content-main, #content-sidebar {
+    display: table-cell;
+}
+
+#content-main {
+  width: 70%;
+  height: 100%;
+  vertical-align: top;
+}
+
+#content-sidebar {
+  width: 30%;
+  height: 100%;
+  background: #2e353d;
+  vertical-align: top;
+}
+
+#icon-home {
+  background: url('../img/icons/moesubs_icon_saber_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+#icon-proyek {
+  background: url('../img/icons/moesubs_icon_rin_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+#icon-profile {
+  background: url('../img/icons/moesubs_icon_sakura_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+#icon-pranala {
+  background: url('../img/icons/moesubs_icon_caster_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+#icon-download {
+  background: url('../img/icons/moesubs_icon_lancer_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+#icon-rss {
+  background: url('../img/icons/moesubs_icon_archer_01.png') center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+.footer-end {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  background: #2e353d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#2e353d, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2e353d, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2e353d, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2e353d, black); /* Standard syntax */
+}
+
+.img-posting {
+  width:100%; 
+  height: 160px;
+}
+
+
+/* Comot CSS */
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background: #2e353d;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  color: #e1ffff;
+}
+.nav-side-menu .brand {
+  background: #23282e;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #e1ffff;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* Cards*/
+.profile-card {
+    background-color: #2e353d;
+  margin-bottom: 20px;
+      
+    }
+    
+.profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  max-width: 100px;
+  -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+        }
+
+        
+.profile-info {
+    color: #BDBDBD;
+    padding: 25px;
+      position: relative;
+      margin-top: 15px;
+        }
+    
+.profile-info h2 {
+  color: #E8E8E8;
+    letter-spacing: 4px;
+    padding-bottom: 12px;
+        }
+        
+.profile-info span {
+  display: block;
+    font-size: 12px;
+    color: #4CB493;
+  letter-spacing: 2px;
+      }
+
+.profile-info a {
+   color: #4CB493;
+    }
+.profile-info i {
+      padding: 15px 35px 0px 35px;
+    }
+    
+
+.profile-card:hover .profile-pic {
+  
+  transform: scale(1.1);
+    }
+
+.profile-card:hover .profile-info hr  {
+  opacity: 1;
+    }
+    
+    
+    
+    
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 52%;
+  right: 52%;
+  bottom: 0;
+  background: #FFFFFF;
+  border-radius: 50%;
+  height: 3px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 52%;
+  right: 52%;
+  bottom: 0;
+  border-radius: 50%;
+  height: 3px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.profile-card:hover .hvr-underline-from-center:before, .profile-card:focus .hvr-underline-from-center:before, .profile-card:active .hvr-underline-from-center:before {
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #CECECE;
+}
+
+/* All media style goes here */
+
+/*Moesubs style*/
+
+@media (min-width: 768px) {
+  #brand-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  .footer-end {
+    display: table-cell;
+  }
+  #brand-desktop {
+    display: none;
+  }
+
+  #container-main {
+    width: 100%;
+}
+
+#content-main, #content-sidebar {
+}
+
+#content-main {
+  padding-top:5px;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+#content-sidebar {
+  padding-top:5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+  .nav-side-menu {
+    height: 100%;
+  }
+
+  .moesubs-brand {
+        font-size: 18px;/*
+        text-align: right;
+        padding-right: 25px;*/
+        display: none;
+    }
+
+    #banner-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    margin-right: 2%;
+    margin-top: 0%;
+  }
+
+  .img-posting
+  {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*Comot style*/
+
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .nav-side-menu .brand {
+    height: 50px;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
