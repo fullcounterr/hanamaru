@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>[Moesubs] Jagonya Ngesub | Anime Fansubs Indonesia</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="16x16">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="192x192">
+        <meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"> 
+
+        <!-- Styles -->
+        <style>
+         /*External style goes here*/
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="{{ URL('assets/css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL('assets/css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL('assets/css/materialize.min.css') }}">
+        <link rel="stylesheet" href="{{ URL('assets/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ URL('assets/css/mdb.css') }}">
+        <link rel="stylesheet" href="{{ URL('assets/css/hover.css') }}">
+          
+    </head>
+    <body>
+    <div id="banner-wrapper">
+      <div class="moesubs-brand">
+        <a href="{{ URL('/') }}" class="hvr-curl-top-left"><b>[Moesubs] Jagonya Ngesub</b></a>
+      </div>
+    <img src="{{ URL('assets/img/banners/moesubs_bang_dream_00.jpg')}}" alt=""> <!-- Banner height must 1000px!!! -->
+    </div>
+    <img id="banner-logo" src="{{ URL('assets/img/moesubs_logo.png') }}" alt="">
+
+    <div id="content-main">
+    <div id="content-sidebar">
+    <!-- for sidebar menu only -->
+      <div class="nav-side-menu">
+      <div id="brand-desktop">
+        <div class="brand">
+        <script type="text/javascript" src="http://localtimes.info/clock.php?continent=Asia&country=Indonesia&city=Jakarta&cp1_Hex=000000&cp2_Hex=000000&cp3_Hex=000000&fwdt=200&ham=1&hbg=1&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000"></script>
+        </div>
+      </div>
+    <div id="brand-mobile" class="brand"><b>[Moesubs] Jagonya Ngesub</b></div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i id="icon-home"></i> Beranda
+                  </a>
+                </li>
+
+                <li data-toggle="collapse" data-target="#proyek" class="collapsed">
+                  <i id="icon-proyek"></i> Proyek <span class="arrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="proyek">
+                    <li><a href="#">Rilisan Terbaru</a></li>
+                    <li><a href="#">Arsip Anime</a></li>
+                    <li><a href="#">Status Pengerjaan</a></li>
+                    <li><a href="#">Jadwal Rilis</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#profile" class="collapsed">
+                  <i id="icon-profile"></i> Profile <span class="arrow"></span>
+                </li>  
+                <ul class="sub-menu collapse" id="profile">
+                  <li>Tentang Kami</li>
+                  <li>Relawan</li>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>IRC</li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#download" class="collapsed">
+                  <i id="icon-download"></i> Download <span class="arrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="download">
+                  <li>Torrent</li>
+                  <li>DDL</li>
+                  <li>XDCC</li>
+                </ul>
+
+
+                 <li data-toggle="collapse" data-target="#pranala" class="collapsed">
+                  <i id="icon-pranala"></i> Pranala Luar <span class="arrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="pranala">
+                  <li>Pantsubber</li>
+                  <li>Anime Distro</li>
+                </ul>
+
+                 <li>
+                  <a href="#">
+                  <i id="icon-rss"></i> RSS
+                  </a>
+                </li>
+                
+            </ul>
+     </div>
+</div>
+    </div>
+    <div id="content-main">
+    <div class="row">
+
+@for ($no = 1; $no <= 9; $no++)
+<!--First columnn-->
+            <div class="col-md-4">
+                <!--Card-->
+                <div class="card" style="padding: 20px;">
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="http://mdbootstrap.com/images/regular/city/img%20({{ $no }}).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Card title {{ $no }}</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-default black">Read more</a>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+@endfor
+
+    </div>
+    </div>
+    </div>
+    <div class="footer-end">
+        Copyleft &copy; 2010-{{ date('Y') }} [Moesubs] Jagonya Ngesub. All wrongs unreserved.
+    </div>
+        <!-- Javascript -->
+        <script type="text/javascript" src="{{ URL('assets/js/jquery-2.1.1.js') }}"></script>
+        <script type="text/javascript" src="{{ URL('assets/js/jquery-ui-1.10.4.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL('assets/js/tether.min.js') }}"></script>  
+        <script type="text/javascript" src="{{ URL('assets/js/bootstrap.js') }}"></script>
+        <script type="text/javascript" src="{{ URL('assets/js/mdb.min.js') }}"></script>
+
+    </body>
+</html>
