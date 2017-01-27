@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Numpang Testing Om</title>
+        <title>Test Page</title>
 
         <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}">
-		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="16x16">
-		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="32x32">
-		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/moesubs_favicon.png') }}" sizes="192x192">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ URL('assets/img/icons/favicon.png') }}">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/favicon.png') }}" sizes="16x16">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/favicon.png') }}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ URL('assets/img/icons/favicon.png') }}" sizes="192x192">
         <meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
 
@@ -29,81 +29,75 @@
         <link rel="stylesheet" href="{{ URL('assets/css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ URL('assets/css/mdb.css') }}">
         <link rel="stylesheet" href="{{ URL('assets/css/hover.css') }}">
-          
+         <style>
+	.navbar-brand,
+.navbar-nav li a {
+    line-height: 65px;
+    height: 65px;
+    padding-top: 0;
+}
+.title {
+	font-size:50%;
+}
+		 </style>
     </head>
     <body>
     <div id="banner-wrapper">
-      <div class="moesubs-brand">
-        <a href="{{ URL('/') }}" class="hvr-curl-top-left"><b>[Moesubs] Jagonya Ngesub</b></a>
-      </div>
-    <img src="{{ URL('assets/img/banners/moesubs_bang_dream_00.jpg')}}" alt=""> <!-- Banner height must 1000px!!! -->
+    <img src="{{ URL('assets/img/banners/alicemarga.jpg')}}" alt="">
     </div>
-    <img id="banner-logo" src="{{ URL('assets/img/moesubs_logo.png') }}" alt="">
+    <img id="banner-logo" src="{{ URL('assets/img/what') }}" alt="">
 
-    <div id="container-main">
-      <div id="content-sidebar">
-          <div class="nav-side-menu">
-            <div id="brand-desktop">
-          <div class="brand">
-            <script type="text/javascript" src="http://localtimes.info/clock.php?continent=Asia&country=Indonesia&city=Jakarta&cp1_Hex=000000&cp2_Hex=000000&cp3_Hex=000000&fwdt=200&ham=1&hbg=1&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000"></script>
-          </div>
-            </div>
-            <div id="brand-mobile" class="brand"><b>[Moesubs] Jagonya Ngesub</b></div>
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-            <div class="menu-list">
-  
-            <ul id="menu-content" class="menu-content collapse out">
-                <li class="dropdown drop-shadow"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"></span><span class="glyphicon glyphicon-info-sign"></span> Home <span class="caret"></a>
+<nav class="navbar navbar-inverse navbar-top" id="main-navbar" role="navigation" style="margin-bottom:0;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<a href="http://neko-chan.eu" class="navbar-brand navbar-right">neko-chan.eu</a>
+				<ul class="nav navbar-nav">
+                <li class="dropdown drop-shadow"><a class="dropdown-toggle" href="http://neko-chan.eu" data-toggle="dropdown" role="button"></span><span class="glyphicon glyphicon-info-sign"></span> Home</a>
 				<li class="dropdown drop-shadow"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"></span><span class="glyphicon glyphicon-info-sign"></span> Release Info <span class="caret"></a>
 				<ul class="dropdown-menu" role="menu">
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-info-sign"></span> New Release</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="/"><span class="glyphicon glyphicon-info-sign"></span> New Release</a></li>
 						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-sunglasses"></span> Archive</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-sunglasses"></span> Statur Report</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-sunglasses"></span> Status Report</a></li>
 						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-sunglasses"></span> Tentative Schedule</a></li>
 						</ul>
 				</li>
-            </ul>
-
+				</ul>
             </div>
-
-          </div>
-      </div>
-
-      <div id="content-main">
+			</div>
+</nav>
+          
+<br>
+<div id="content-main">
 <div class="container-fluid">  
-<div class="row">
-            @foreach ($rilisan as $data)
-            <!--columnn-->
-            <div class="col-md-4">
-              <div class="profile-card text-center">
-
-                 <div class="view overlay hm-white-slight">
-                <img class="img-posting" src="{{ $data['gambar'] }}">
+<div class="jumbotron">
+            <!--column-->
+			<h4>{{ $post['judul'] }}</h4>
+			<div class="text-center">
+                <img src="{{ $post['gambar'] }}">
                         <a href="#">
                             <div class="mask"></div>
                         </a>
-                </div>
+				</div>
 
-                <div class="profile-info">
-
-                  <h2 class="hvr-underline-from-center">Rod<span>Digital / Design Consultant</span></h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <a href="#" class="btn btn-default black">Selengkapnya</a>
+				&nbsp
+                <div>{{ $post['sinopsisPendek'] }} .<br>{{ $post['sinopsisPanjang'] }}</div>
+				<!--columnn-->
                 </div>
 
               </div>
             </div>
-            <!--columnn-->
-            @endforeach
-            <div class="text-center">{{ $rilisan->links() }}</div>
-</div>
-</div>
-      </div>
-      </div>
+			
 
       <div class="footer-end">
-        CopyPaste &copy; 2010-{{ date('Y') }} om Himeko, numpang modip ea.
+        CopyPaste &copy; 1945-{{ date('Y') }} All enemy must be desutroyed.
       </div>
 
         <!-- Javascript -->
