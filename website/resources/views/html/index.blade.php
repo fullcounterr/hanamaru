@@ -43,7 +43,7 @@
     </head>
     <body>
     <div id="banner-wrapper">
-    <img src="{{ URL('assets/img/banners/alice.jpg')}}" alt="">
+    <img src="{{ URL('assets/img/banners/alicemarga.jpg')}}" alt="">
     </div>
     <img id="banner-logo" src="{{ URL('assets/img/what') }}" alt="">
 
@@ -58,7 +58,7 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<a href="index.html" class="navbar-brand navbar-right">yoursite.com</a>
+				<a href="http://neko-chan.eu" class="navbar-brand navbar-right">neko-chan.eu</a>
 				<ul class="nav navbar-nav">
                 <li class="dropdown drop-shadow"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"></span><span class="glyphicon glyphicon-info-sign"></span> Home</a>
 				<li class="dropdown drop-shadow"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"></span><span class="glyphicon glyphicon-info-sign"></span> Release Info <span class="caret"></a>
